@@ -5,7 +5,7 @@ export default function Header({ total, count }) {
                 <p className="badge">Shared Expense Tracker</p>
 
                 <h1>
-                    Track money
+                    Трекер грошей
                     <br />
                     together.
                 </h1>

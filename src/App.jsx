@@ -22,12 +22,15 @@ import {
 import { db } from "./firebase/firebase";
 
 const categories = [
-    "Food",
-    "Transport",
-    "Shopping",
-    "Bills",
-    "Travel",
-    "Entertainment",
+    "Їда",
+    "Машина",
+    "Одяг",
+    "Відпочинок",
+    "Ресторани",
+    "Комуналка",
+    "Розваги",
+    "Подорож",
+    "Підписки",
 ];
 
 export default function App() {
@@ -48,7 +51,7 @@ export default function App() {
         useState("");
 
     const [category, setCategory] =
-        useState("Food");
+        useState("Їда");
 
     const [budget, setBudget] =
         useState("shared");
@@ -276,9 +279,9 @@ export default function App() {
                 {/* HEADER */}
                 <header className="header">
                     <div>
-                        <p className="badge">
-                            Shared Couple Budget
-                        </p>
+                        {/*<p className="badge">*/}
+                        {/*    Shared Couple Budget*/}
+                        {/*</p>*/}
 
                         <h1>
                             Money
@@ -286,14 +289,14 @@ export default function App() {
                             Tracker
                         </h1>
 
-                        <p className="subtitle">
-                            Shared realtime finance
-                            tracker.
-                        </p>
+                        {/*<p className="subtitle">*/}
+                        {/*    Shared realtime finance*/}
+                        {/*    tracker.*/}
+                        {/*</p>*/}
                     </div>
 
                     <div className="balance-card">
-                        <span>Total Balance</span>
+                        <span>Загальний бюджет</span>
 
                         <h2>
                             €
@@ -301,7 +304,7 @@ export default function App() {
                         </h2>
 
                         <p>
-                            Expenses €
+                            Витрати: €
                             {totalExpenses.toFixed(2)}
                         </p>
                     </div>
@@ -311,9 +314,9 @@ export default function App() {
                 <section className="stats-grid">
                     {/* ME */}
                     <div className="stat-card">
-                        <span>Your Budget</span>
+                        <span>Бюджет Романа</span>
 
-                        <h2>
+                        <h2 >
                             €
                             {balances.me.toFixed(2)}
                         </h2>
@@ -346,7 +349,7 @@ export default function App() {
 
                     {/* HER */}
                     <div className="stat-card">
-                        <span>Her Budget</span>
+                        <span>Бюджет Олі</span>
 
                         <h2>
                             €
@@ -381,7 +384,7 @@ export default function App() {
 
                     {/* SHARED */}
                     <div className="stat-card">
-                        <span>Shared Budget</span>
+                        <span>Готівка</span>
 
                         <h2>
                             €
@@ -425,7 +428,7 @@ export default function App() {
                 >
                     <input
                         type="text"
-                        placeholder="Expense title"
+                        placeholder="Опис витрати"
                         value={title}
                         onChange={(e) =>
                             setTitle(e.target.value)
@@ -434,7 +437,7 @@ export default function App() {
 
                     <input
                         type="number"
-                        placeholder="Amount"
+                        placeholder="Ціна"
                         value={amount}
                         onChange={(e) =>
                             setAmount(e.target.value)
@@ -465,27 +468,27 @@ export default function App() {
                         }
                     >
                         <option value="me">
-                            My Budget
+                            Роман
                         </option>
 
                         <option value="her">
-                            Her Budget
+                            Оля
                         </option>
 
                         <option value="shared">
-                            Shared Budget
+                            Готівка
                         </option>
                     </select>
 
                     <button type="submit">
-                        Add Expense
+                        Добавити
                     </button>
                 </form>
 
                 {/* CATEGORIES */}
                 <section>
                     <div className="section-title">
-                        <h2>Category Totals</h2>
+                        <h2>Загальні категорії</h2>
                     </div>
 
                     <div className="category-grid">
@@ -512,7 +515,7 @@ export default function App() {
                 {/* EXPENSES */}
                 <section>
                     <div className="section-title">
-                        <h2>Expenses</h2>
+                        <h2>Витрати</h2>
                     </div>
 
                     <div className="expenses-grid">
