@@ -93,9 +93,9 @@ select {
 .header {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    justify-content: space-between;
 
     align-items: center;
+    justify-items: center;
 
     gap: 40px;
 
@@ -134,6 +134,7 @@ select {
 
 .balance-card {
     min-width: 320px;
+    max-width: 500px;
 
     padding: 34px;
 
@@ -167,6 +168,8 @@ select {
     auto-fit,
     minmax(240px, 1fr)
   );
+
+
 
     gap: 20px;
 
