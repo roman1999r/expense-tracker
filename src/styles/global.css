@@ -266,6 +266,7 @@ select {
 
 .form-card input,
 .form-card select {
+
     height: 58px;
 
     border-radius: 16px;
@@ -274,11 +275,17 @@ select {
 
     background: rgba(255,255,255,0.06);
 
+    /*background-color: rgba(255,255,255,0.06);*/
+
     color: white;
 
     padding: 0 16px;
 
     outline: none;
+}
+.form-card select option {
+    background-color: var(--card);
+    color: white;
 }
 
 .form-card button {
