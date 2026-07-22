@@ -1,0 +1,60 @@
+.expense-card {
+    display: grid;
+
+    grid-template-columns:
+    1fr
+    120px
+    120px;
+
+    align-items: center;
+
+    gap: 20px;
+
+    padding: 16px 20px;
+
+    border-radius: 20px;
+
+    background: var(--card);
+
+    margin-bottom: 12px;
+}
+
+.expense-info h3 {
+    margin: 0;
+}
+
+.expense-info p {
+    margin-top: 4px;
+
+    color: var(--muted);
+}
+
+.expense-amount {
+    text-align: right;
+
+    font-size: 32px;
+
+    font-weight: 700;
+}
+
+.expense-delete {
+    justify-self: end;
+}
+
+.expense-card button {
+    border: none;
+
+    padding: 10px 16px;
+
+    border-radius: 12px;
+
+    background:
+            rgba(
+                    239,
+                    68,
+                    68,
+                    .15
+            );
+
+    color: #fca5a5;
+}

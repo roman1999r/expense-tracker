@@ -1,0 +1,27 @@
+.desktop-nav {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 24px;
+}
+
+.desktop-nav button {
+    border: none;
+    border-radius: 14px;
+    padding: 12px 20px;
+    background: var(--card);
+    color: var(--text);
+}
+
+.desktop-nav .active {
+    background: linear-gradient(
+            135deg,
+            var(--accent),
+            var(--accent2)
+    );
+}
+
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+}

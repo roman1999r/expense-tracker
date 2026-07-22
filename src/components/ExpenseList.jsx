@@ -1,4 +1,4 @@
-import ExpenseCard from "./ExpenseCard";
+import ExpenseCard from "./ExpenseCard/ExpenseCard.jsx";
 
 export default function ExpenseList({
                                         expenses,

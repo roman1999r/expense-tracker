@@ -1,0 +1,19 @@
+.chart-card {
+    padding: 24px;
+
+    border-radius: 24px;
+
+    background: var(--card);
+
+    width: 100%;
+
+    overflow: hidden;
+}
+
+.chart-card h2 {
+    margin-bottom: 20px;
+}
+
+.recharts-responsive-container {
+    min-width: 0 !important;
+}

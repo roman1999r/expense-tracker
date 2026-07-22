@@ -1,0 +1,26 @@
+.language-switcher {
+    display: flex;
+
+    gap: 8px;
+}
+
+.language-switcher button {
+    width: 44px;
+
+    height: 44px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: var(--card);
+
+    color: var(--text);
+
+    font-size: 20px;
+}
+
+.language-switcher .active {
+    outline: 2px solid
+    var(--accent);
+}
